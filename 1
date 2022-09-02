@@ -1,0 +1,24 @@
+# Name: Garrison Brinkerhoff
+# Assignment: Honor roll
+# Description: With this program you will be able to see if you made dean's list or honor roll
+
+Lname = 0
+Fname = 0
+Quit = "ZZZ"
+GPA = 0
+
+Lname = input("Enter you last name or ZZZ to quit: ")
+while Lname != Quit:
+    if Lname == "ZZZ":
+        Lname = input("Enter you last name or ZZZ to quit: ")
+    else:
+        Fname = input("Enter your first name: ")
+
+GPA = float(input("Enter your GPA: "))
+
+if GPA >= 3.5:
+    print("You made the Dean's list.")
+elif GPA >= 3.0:
+    print("You made honor roll.")
+else:
+    print(Fname + " " + Lname + " you didn't make honor roll or the Dean's List.")
